@@ -1,0 +1,32 @@
+{
+  "name": "cors-test",
+  "version": "1.0.1",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/marclar/cors-test.git"
+  },
+  "scripts": {
+    "deploy": "NODE_ENV=production sls deploy --stage production",
+    "start": "NODE_ENV=dev sls offline start",
+    "update": "npx npm-check-updates -u"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.608.0",
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "express-jwt": "^5.3.1",
+    "serverless-finch": "^2.5.2",
+    "serverless-http": "^2.3.0"
+  },
+  "devDependencies": {
+    "serverless-offline": "^5.12.1",
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/marclar/cors-test/issues"
+  },
+  "homepage": "https://github.com/marclar/cors-test#readme"
+}
